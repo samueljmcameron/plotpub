@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="plotpub",
-    version="0.0.1",
+    version="0.0.3",
     author="Sam Cameron",
     author_email="samuel.j.m.cameron@gmail.com",
     description="For publication quality plots",
