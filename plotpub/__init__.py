@@ -1,7 +1,7 @@
-def PlotPub():
+import matplotlib.pyplot as plt
+import numpy as np
 
-    import matplotlib.pyplot as plt
-    import numpy as np
+def PlotPub():
     
     gold = (np.sqrt(5)-1)/2
     figsize=[3.73,3.73*gold]
