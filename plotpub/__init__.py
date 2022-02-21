@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
-import numpy as np
+import math
 
 def PlotPub():
     
-    gold = (np.sqrt(5)-1)/2
+    gold = (math.sqrt(5)-1)/2
     figsize=[3.73,3.73*gold]
     params = {'backend': 'pdf',
               'axes.labelsize': 14,
@@ -14,11 +14,9 @@ def PlotPub():
               'text.usetex': True,
               'figure.figsize': figsize,
               'figure.dpi': 200,
-              'text.latex.preamble': [r"\usepackage{amstext}",
-                                      r"\usepackage{amsmath}",
-                                      r"\usepackage{bm}",
-                                      r"\usepackage{siunitx}",
-                                      r"\usepackage{braket}"]}
+              'text.latex.preamble': (r"\usepackage{amstext} \usepackage{amsmath}"
+                                      + r" \usepackage{bm} \usepackage{siunitx}"
+                                      + r" \usepackage{braket}")}
     plt.rcParams.update(params)
 
 

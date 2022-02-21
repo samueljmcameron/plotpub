@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
 print(setuptools.find_packages())
 setuptools.setup(
     name="plotpub",
-    version="0.0.7",
+    version="0.0.8",
     author="Sam Cameron",
     author_email="samuel.j.m.cameron@gmail.com",
     description="For publication quality plots",
@@ -20,5 +20,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-    install_requires=['matplotlib','numpy']
+    install_requires=['matplotlib']
 )
